@@ -1,0 +1,13 @@
+name: springboot-first-benchmark
+agents:
+  agent-1: 
+  agent-2: 
+http:
+  host: http://springboot-jpa.poc.svc.cluster.local:8080
+  sharedConnections: 10 
+duration: 60s
+usersPerSec: 100 
+scenario:
+- fetchIndex: 
+  - httpRequest:
+      GET: /zipcode/by_city?city=kolkata
