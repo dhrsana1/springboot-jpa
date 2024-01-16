@@ -12,6 +12,8 @@ import org.springframework.r2dbc.connection.init.ConnectionFactoryInitializer;
 import org.springframework.r2dbc.connection.init.ResourceDatabasePopulator;
 import org.springframework.transaction.ReactiveTransactionManager;
 
+
+
 @ComponentScan(basePackages = "com.poc.*")
 @SpringBootApplication
 @EnableR2dbcRepositories
